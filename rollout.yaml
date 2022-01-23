@@ -57,6 +57,7 @@ metadata:
 spec:
   ports:
   - port: 80
+    name: http-demo
     targetPort: 8080
   selector:
     app: demo
@@ -69,6 +70,7 @@ metadata:
 spec:
   ports:
   - port: 80
+    name: http-canary
     targetPort: 8080
   selector:
     app: demo
